@@ -46,7 +46,7 @@ async def counter(websocket):
 
 async def main():
     async with websockets.serve(counter, "localhost", 5678):
-        asyncio.Future()
+        await asyncio.Future()
 
 if __name__ == "__main__":
     asyncio.run(main())
